@@ -312,8 +312,14 @@ function setupVoiceRecognition() {
         console.error("Erreur de reconnaissance vocale : ", event.error);
     };
 
+    recognition.onend = function() {
+        console.log("Redémarrage de la reconnaissance...");
+        recognition.start();
+    };
+
     recognition.start();
 }
+
 
 function playSound(id) {
     const sound = document.getElementById(id);
