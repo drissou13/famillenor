@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>famille en or </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une Famille en Or - Deux Familles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>Une Famille en Or</h1>
+
+    <div class="team-scores">
+        <div id="team1">Famille 1 : <span>0</span> pts</div>
+        <div id="team2">Famille 2 : <span>0</span> pts</div>
+    </div>
+
+    <div class="question" id="question"></div>
+    <div class="answer-board" id="answer-board"></div>
+
+    <div id="timer">Temps restant : <span>30</span> secondes</div>
+
+    <div class="controls">
+        <input type="text" id="player-answer" placeholder="Votre réponse...">
+        <button id="validate-button">Valider</button>
+        <button onclick="newRound()">Nouvelle Question</button>
+    </div>
+
+    <div id="errors">Erreurs : 0/3</div>
+</div>
+
+<audio id="good-sound" src="good.mp3"></audio>
+<audio id="bad-sound" src="bad.mp3"></audio>
+<audio id="end-sound" src="end.mp3"></audio>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
